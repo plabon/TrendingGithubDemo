@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:id="@+id/title_text"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/big_text_size"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:id="@+id/description"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/top_text_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:id="@+id/id_text"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/bottom_text_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:id="@+id/html_url"
+        android:autoLink="web"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/top_text_size"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:id="@+id/url"
+        android:autoLink="web"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/top_text_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:id="@+id/stars_count"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/top_text_size"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:id="@+id/watchs_count"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/top_text_size"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:id="@+id/language"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/top_text_size"/>
+
+
+
+
+
+
+</LinearLayout>

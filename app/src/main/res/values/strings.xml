@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TrendingGithubDemo</string>
+    <string name="title_activity_repo_details">RepoDetailsActivity</string>
+    <string name="id_text">Repositoty Id: %1$s</string>
+    <string name="star_text">Star Count: %1$s</string>
+    <string name="watchers_text">Watchers Count: %1$s</string>
+    <string name="language_text">Language: %1$s</string>
+    <string name="licence">Licence: %1$s</string>
+</resources>
