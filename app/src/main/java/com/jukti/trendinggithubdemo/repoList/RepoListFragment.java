@@ -67,6 +67,7 @@ public class RepoListFragment extends Fragment implements RepoListContract.View 
         loadingProgress = view.findViewById(R.id.loading_progress);
         repoRecyClerView.setLayoutManager(mLayoutManager);
         repoRecyClerView.setAdapter(mRepoAdapter);
+        // In real application this internet check will be in the data layer for test purpose this is added here
         if(Utility.isNetworkAvailable(getActivity()))
             mPresenter.getAllRepos();
         else
