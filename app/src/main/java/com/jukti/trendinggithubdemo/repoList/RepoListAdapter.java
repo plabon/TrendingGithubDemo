@@ -65,8 +65,8 @@ public class RepoListAdapter extends RecyclerView.Adapter<RepoListAdapter.RepoVi
 
         public RepoViewHolder(View itemView) {
             super(itemView);
-            repoTitleText = (TextView) itemView.findViewById(R.id.english_word);
-            repoUrlText = (TextView) itemView.findViewById(R.id.bangla_word);
+            repoTitleText = (TextView) itemView.findViewById(R.id.repo_title);
+            repoUrlText = (TextView) itemView.findViewById(R.id.repo_link);
         }
 
         public void updateItem(GithubRepoModel repoModel){

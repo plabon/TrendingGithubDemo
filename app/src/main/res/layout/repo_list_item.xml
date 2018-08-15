@@ -20,7 +20,7 @@
         android:layout_margin="@dimen/small_margin">
 
         <TextView
-            android:id="@+id/english_word"
+            android:id="@+id/repo_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/top_text_size"
@@ -28,7 +28,7 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/bangla_word"
+            android:id="@+id/repo_link"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/bottom_text_size"

@@ -12,7 +12,7 @@ public interface GithubApi {
 
     String BASE_URL = "https://api.github.com";
 
-    @GET("/search/repositories?q=created:>2018-01-01+language:java&sort=stars&order=desc&per_page=20")
+    @GET("/search/repositories?q=created:>2018-01-01+language:java&sort=stars&order=desc&per_page=30")
     Call<ListWrapper<GithubRepoEntity>> getTrendingRepos(@Query("page") int pageNumber);
 
 }

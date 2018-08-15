@@ -17,6 +17,7 @@ import com.jukti.trendinggithubdemo.Injection;
 import com.jukti.trendinggithubdemo.R;
 import com.jukti.trendinggithubdemo.models.GithubRepoModel;
 import com.jukti.trendinggithubdemo.repoDetails.RepoDetailsActivity;
+import com.jukti.trendinggithubdemo.utils.Utility;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,11 +67,19 @@ public class RepoListFragment extends Fragment implements RepoListContract.View 
         loadingProgress = view.findViewById(R.id.loading_progress);
         repoRecyClerView.setLayoutManager(mLayoutManager);
         repoRecyClerView.setAdapter(mRepoAdapter);
-        mPresenter.getAllRepos();
+        if(Utility.isNetworkAvailable(getActivity()))
+            mPresenter.getAllRepos();
+        else
+            showNoInternetConnection();
+
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
 
+    }
 
     @Override
     public void onAttach(Context context) {
@@ -91,6 +100,8 @@ public class RepoListFragment extends Fragment implements RepoListContract.View 
         mRepoAdapter.setRepos(repoModels);
 
     }
+
+
 
     @Override
     public void showLoadingProgress(boolean isShow) {
@@ -117,6 +128,12 @@ public class RepoListFragment extends Fragment implements RepoListContract.View 
         Intent intent = new Intent(getContext(), RepoDetailsActivity.class);
         intent.putExtra(RepoDetailsActivity.EXTRA_REPO_OBJECT, model);
         startActivity(intent);
+    }
+
+    @Override
+    public void showNoInternetConnection() {
+        loadingProgress.setVisibility(View.GONE);
+        Toast.makeText(getActivity(),"Please check your internet connection!",Toast.LENGTH_SHORT).show();
     }
 
     @Override

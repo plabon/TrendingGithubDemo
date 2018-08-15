@@ -16,6 +16,7 @@ public interface RepoListContract {
         void showLoadingProgress(boolean isShow);
         void showErrorMsg();
         void startDetailActivity(GithubRepoModel model);
+        void showNoInternetConnection();
     }
     public interface Presenter extends BasePresenter {
         void doSearch(String searchKey);

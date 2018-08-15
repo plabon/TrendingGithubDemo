@@ -13,13 +13,13 @@ public class RepoListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_repo_list);
 
-        RepoListFragment wordsFragment =
+        RepoListFragment reposFragment =
                 (RepoListFragment) getSupportFragmentManager().findFragmentById(R.id.container);
-        if (wordsFragment == null) {
+        if (reposFragment == null) {
             // Create the fragment
-            wordsFragment = RepoListFragment.newInstance();
+            reposFragment = RepoListFragment.newInstance();
             ActiivtyUtils.addFragmentToActivity(
-                    getSupportFragmentManager(), wordsFragment, R.id.container);
+                    getSupportFragmentManager(), reposFragment, R.id.container);
         }
 
     }
