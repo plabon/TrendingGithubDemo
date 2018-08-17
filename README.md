@@ -5,6 +5,7 @@ This is a test project for fetching trending github java repository using Clean 
 ![alt text](https://github.com/plabon/TrendingGithubDemo/blob/master/architecture.png)
 # For further reading
 https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
+
 https://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/
 
 # Libreries used
