@@ -1,5 +1,5 @@
 # TrendingGithubDemo
-This is a test project for fetching trending github java repository using Clean Code architecture(Robert C. Martin) and retrifit2
+This is a test project for fetching trending github java repository using Clean Code architecture(Robert C. Martin) and retrofit2
 
 # CleanArchitecture
 ![alt text](https://github.com/plabon/TrendingGithubDemo/blob/master/architecture.png)
